@@ -1,0 +1,278 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: tahoma;
+  height: auto;
+  width: auto;
+}
+      /* navbar */
+.navbar{
+  width: 100%;
+  position:fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+.navbar a{
+  text-decoration: none;
+  color: inherit;
+}
+.navbar a:hover{
+  color: #ff471a;
+}
+.logo{
+  float: left;
+  padding-top: 1.5%;
+}
+.list{
+  list-style:none;
+  display: flex;
+  gap:30px;
+  margin-right: 30px;
+  padding-top:12px;
+  align-items: center;
+}
+li{
+  padding-top:5.5px;
+}
+.menu{
+  float: left;
+}
+#toggler,
+.navbar label{
+  display: none;
+}
+.img{
+  width:100%;
+  height:560px;
+  background-image: url(photo/Str.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head{
+  padding-top: 100px;
+}
+.bt{
+  background-color:#ff471a;
+  border: none;
+  width: 15%;
+  border-radius: 15px;
+  height: 32px;
+  color: #e6e6e6;
+  margin-left: 10px;
+}
+.sen{
+  width: 100%;
+  height: 220px;
+  padding: 3%;
+}
+.par{
+  margin-top: 20px;
+  width: 60%;
+}
+.par2{
+    width: 54%;
+    margin-top: -13px;
+}
+.hr{
+    width:14%;
+    height:4px;
+    margin-top:30px;
+    position:sticky;
+}
+.img_two{
+    width:100%;
+    height:570px;
+    background-image: url(photo/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.head_two{
+  padding-top: -20px;
+}
+.icone{
+  margin-left:150px;
+}
+.icone1{
+  margin-left:8px;
+}
+.f_foot{
+  background-color: black;
+  height:auto;
+  width: 100%;
+  color: red;
+  padding: 2%;
+}
+.fast , .far ,  .safe , .built{
+  display:table-cell;
+  margin-top: 2.5%;
+  height: auto;
+  gap:20px;
+  font-size: 13px;
+}
+.fs , .sc , .th{
+  display: table-cell;
+  height: auto;
+  width: 100%;
+  font-size: 13px;
+  text-decoration: none;
+  padding-top: 5%;
+}
+footer h4{
+  font-weight: bold;
+}
+footer ul a{
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #ff471a;
+}
+.f_list{
+  text-decoration:none;
+  list-style:none;
+  margin-left:-31px;
+  color: black;
+
+}
+.explore{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+   letter-spacing: 1px;
+}
+.explore_two{
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+   letter-spacing: 1px;
+}
+.one , .two{
+  display: table-cell;
+  padding: 1%;
+}
+/* .logo_two{
+  padding-left: 120px;
+  padding-: 100px;
+} */
+          /* mobile */
+@media screen and (max-width:768px) {
+  .menu{
+    width: 90%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  a:hover{
+    color: #ff471a;
+  }
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+    padding-left: 55px;
+    display: block;
+    color: white;
+  }
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    display: block;
+  }
+  #toggler:checked ~ .menu{
+    max-height: 100%;
+  }
+  .img{
+    width: 100%;
+  }
+  .navbar{
+    background-size: cover;
+  }
+  .bt{
+    width: 50%;
+    margin-top: 10px;
+  }
+  .sen{
+    width: 100%;
+    background-color: #808080;
+    height: 370px;
+    padding: 3%;
+  }
+  .par{
+    margin-top: 20px;
+      width:80%;
+  }
+  .par2{
+      width: 80%;
+      margin-top: -13px;
+  }
+  .hr{
+      width:30%;
+      height:5px;
+      margin-top:30px;
+  }
+  .head2
+  {
+    width: 80%;
+  }
+  .icone{
+    margin-left: -10px;
+  }
+  .icone1{
+    margin-left:-10px;
+  }
+  .f_foot{
+    height: auto;
+  }
+  .fast , .far ,  .safe , .built{
+    display:block;
+    margin-top: 2.5%;
+    height: auto;
+    gap:20px;
+    font-size: 13px;
+  }
+  .one , .two{
+    display: block;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+    width: 100%;
+  }
+  .fs , .sc , .th{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+    margin-left: 10px;
+  }
+  .fs{
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1%;
+    margin-left: 10px;
+    height:20px;
+    font-size: 10px;
+  }
+  .logo_two{
+    margin-top: -120px;
+    box-sizing: border-box;
+  }
+  .sc{
+    margin-top: 90px;
+  }
+  .logo_two{
+    height: 10px;
+    box-sizing: border-box;
+    margin-top: 10%;
+  }
+
+}
